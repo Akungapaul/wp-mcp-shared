@@ -1,0 +1,41 @@
+{
+  "name": "@akungapaul/wp-mcp-shared",
+  "version": "1.0.0",
+  "description": "Shared utilities for WordPress MCP servers",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./clients/rest-api": "./clients/rest-api.js",
+    "./clients/wp-cli": "./clients/wp-cli.js",
+    "./utils/logger": "./utils/logger.js",
+    "./utils/cache": "./utils/cache.js",
+    "./utils/schema": "./utils/schema.js"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akungapaul/wp-mcp-shared.git"
+  },
+  "keywords": [
+    "wordpress",
+    "mcp",
+    "shared",
+    "utilities"
+  ],
+  "author": "Akungapaul",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.7.9",
+    "node-cache": "^5.1.2",
+    "winston": "^3.17.0",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.25.0"
+  },
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": ">=1.0.0"
+  }
+}
